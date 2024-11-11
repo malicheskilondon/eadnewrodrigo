@@ -30,33 +30,16 @@
             padding: 1.5rem 0;
             position: relative;
         }
-        nav ul {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
-        nav a {
-            font-weight: bold;
-            transition: color 0.3s;
-        }
-        nav a:hover {
-            color: #f4f4f9;
-        }
-
-        /* Novo recurso: Hora local */
         .hora-local {
             position: absolute;
             top: 0;
             left: 10px;
-            color: black;
+            color: #ff0000; /* Vermelho fluorescente */
             font-weight: bold;
             margin: 10px;
             font-size: 1.2rem;
+            text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000; /* Efeito de brilho */
         }
-
-        /* Novo recurso: Contador de visitas */
         .contador-visitas {
             position: absolute;
             top: 0;
@@ -67,92 +50,21 @@
             font-size: 1.2rem;
         }
 
-        /* Seções */
-        main {
-            display: flex;
-            flex-direction: column;
-            gap: 1.5rem;
-            padding: 2rem;
-            max-width: 800px;
-            margin: auto;
-        }
-        .post {
-            padding: 1rem;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .post h3 {
-            margin: 0;
-            color: #333;
-        }
-        .post img {
-            width: 100%;
-            max-height: 300px;
-            border-radius: 8px;
-            margin-top: 1rem;
-        }
-        .post p {
-            margin: 0.5rem 0;
-        }
-
-        /* Formulário de contato */
-        #contato {
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            padding: 2rem;
-            max-width: 600px;
-            margin: 2rem auto;
-        }
-        form {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-        input, textarea {
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            width: 100%;
-            background-color: #f9f9f9;
-        }
-        textarea {
-            resize: vertical;
-        }
-        button {
-            padding: 10px;
-            background-color: #007BFF;
-            color: #fff;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-        button:hover {
-            background-color: #0056b3;
-        }
-
-        /* Rodapé */
-        footer {
-            background-color: #222;
-            color: #f4f4f9;
-            text-align: center;
-            padding: 1.5rem;
-            margin-top: 2rem;
-        }
+        /* Resto da estilização */
+        /* ... */
     </style>
 </head>
 <body>
     <header>
         <h1>História da Tecnologia-MEUBLOG</h1>
         <h1>RODRIGO ZORZELLA MALICHESKI</h1>
+        <!-- Elemento de data e hora -->
         <div class="hora-local" id="horaLocal">00/00/0000 00:00:00</div>
+        <!-- Contador de visitas -->
         <div class="contador-visitas" id="contador">Visitas: 0</div>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="sobremim.html">Sobre mim</a></li>
                 <li><a href="sobre.html">Sobre</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
@@ -161,53 +73,16 @@
 
     <main>
         <!-- Conteúdo dos posts -->
-        <!-- Post 1: História dos Celulares -->
-        <article id="post1" class="post">
-            <h3>A Evolução dos Celulares</h3>
-            <p><small>Publicado em: 01/01/2024</small></p>
-            <img src="dynatac-8000x.jpg" alt="Motorola DynaTAC 8000X">
-            <p>Os primeiros telefones celulares surgiram na década de 1970...</p>
-            <p>Para saber mais sobre a história dos celulares, visite este <a href="https://pt.wikipedia.org/wiki/Telefone_celular">link da Wikipedia</a>.</p>
-        </article>
-
-        <!-- Post 2: História dos Computadores -->
-        <article id="post2" class="post">
-            <h3>A Revolução dos Computadores</h3>
-            <p><small>Publicado em: 02/02/2024</small></p>
-            <img src="ENIAC.jpg" alt="Computador ENIAC">
-            <p>Os primeiros computadores, como o ENIAC, surgiram na década de 1940...</p>
-            <p>Saiba mais sobre a história dos computadores <a href="https://pt.wikipedia.org/wiki/Computador">neste artigo</a>.</p>
-        </article>
-
-        <!-- Post 3: História dos Notebooks -->
-        <article id="post3" class="post">
-            <h3>A História dos Notebooks</h3>
-            <p><small>Publicado em: 03/03/2024</small></p>
-            <img src="thinkpad_750c_transparent.png" alt="IBM ThinkPad 750">
-            <p>Os notebooks começaram a ganhar popularidade nos anos 1990...</p>
-            <p>Leia mais sobre a evolução dos notebooks <a href="https://pt.wikipedia.org/wiki/Computador_port%C3%A1til">aqui</a>.</p>
-        </article>
+        <!-- ... -->
     </main>
 
     <!-- Formulário de contato -->
     <section id="contato">
-        <h2>Contato</h2>
-        <form>
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="mensagem">Mensagem:</label>
-            <textarea id="mensagem" name="mensagem" rows="4" maxlength="500" required></textarea>
-
-            <button type="submit">Enviar</button>
-        </form>
+        <!-- ... -->
     </section>
 
     <footer>
-        <p>© 2024 Seu Nome. Todos os direitos reservados.</p>
+        <p>© 2024 Rodrigo Zorzella Malicheski. Todos os direitos reservados.</p>
     </footer>
 
     <script>
