@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>História da Tecnologia - Meu Blog</title>
+    <style>
+        /* Estilização geral */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+            padding: 1.5rem 0;
+        }
+        footer {
+            background-color: #222;
+            color: #f4f4f9;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+        .visitas {
+            margin: 1rem;
+            text-align: center;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>História da Tecnologia</h1>
+    </header>
+
+    <!-- Contador de visitas -->
+    <div class="visitas">
+        <p id="contador">Número de visitas: 0</p>
+    </div>
+
+    <!-- Resto do conteúdo -->
+    <main>
+        <!-- Conteúdo do site -->
+    </main>
+
+    <footer>
+        <p>© 2024 Seu Nome. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        // Script para contar visitas usando localStorage
+        if (localStorage.getItem('contadorVisitas')) {
+            let visitas = parseInt(localStorage.getItem('contadorVisitas'));
+            visitas++;
+            localStorage.setItem('contadorVisitas', visitas);
+            document.getElementById('contador').textContent = 'Número de visitas: ' + visitas;
+        } else {
+            localStorage.setItem('contadorVisitas', 1);
+            document.getElementById('contador').textContent = 'Número de visitas: 1';
+        }
+    </script>
+</body>
+</html>

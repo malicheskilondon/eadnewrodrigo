@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>História da Tecnologia-Meu Blog</title>
+    <style>
+        /* Estilização geral */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+            padding: 1.5rem 0;
+            position: relative;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav a {
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #f4f4f9;
+        }
+
+        /* Novo recurso: Hora local */
+        .hora-local {
+            position: absolute;
+            top: 0;
+            left: 10px;
+            color: black;
+            font-weight: bold;
+            margin: 10px;
+            font-size: 1.2rem;
+        }
+
+        /* Novo recurso: Contador de visitas */
+        .contador-visitas {
+            position: absolute;
+            top: 0;
+            right: 10px;
+            color: red;
+            font-weight: bold;
+            margin: 10px;
+            font-size: 1.2rem;
+        }
+
+        /* Seções */
+        main {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            padding: 2rem;
+            max-width: 800px;
+            margin: auto;
+        }
+        .post {
+            padding: 1rem;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .post h3 {
+            margin: 0;
+            color: #333;
+        }
+        .post img {
+            width: 100%;
+            max-height: 300px;
+            border-radius: 8px;
+            margin-top: 1rem;
+        }
+        .post p {
+            margin: 0.5rem 0;
+        }
+
+        /* Formulário de contato */
+        #contato {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            max-width: 600px;
+            margin: 2rem auto;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        input, textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 100%;
+            background-color: #f9f9f9;
+        }
+        textarea {
+            resize: vertical;
+        }
+        button {
+            padding: 10px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #222;
+            color: #f4f4f9;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>História da Tecnologia-MEUBLOG</h1>
+        <h1>RODRIGO ZORZELLA MALICHESKI</h1>
+        <div class="hora-local" id="horaLocal">00/00/0000 00:00:00</div>
+        <div class="contador-visitas" id="contador">Visitas: 0</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobremim.html">Sobre mim</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Conteúdo dos posts -->
+        <!-- Post 1: História dos Celulares -->
+        <article id="post1" class="post">
+            <h3>A Evolução dos Celulares</h3>
+            <p><small>Publicado em: 01/01/2024</small></p>
+            <img src="dynatac-8000x.jpg" alt="Motorola DynaTAC 8000X">
+            <p>Os primeiros telefones celulares surgiram na década de 1970...</p>
+            <p>Para saber mais sobre a história dos celulares, visite este <a href="https://pt.wikipedia.org/wiki/Telefone_celular">link da Wikipedia</a>.</p>
+        </article>
+
+        <!-- Post 2: História dos Computadores -->
+        <article id="post2" class="post">
+            <h3>A Revolução dos Computadores</h3>
+            <p><small>Publicado em: 02/02/2024</small></p>
+            <img src="ENIAC.jpg" alt="Computador ENIAC">
+            <p>Os primeiros computadores, como o ENIAC, surgiram na década de 1940...</p>
+            <p>Saiba mais sobre a história dos computadores <a href="https://pt.wikipedia.org/wiki/Computador">neste artigo</a>.</p>
+        </article>
+
+        <!-- Post 3: História dos Notebooks -->
+        <article id="post3" class="post">
+            <h3>A História dos Notebooks</h3>
+            <p><small>Publicado em: 03/03/2024</small></p>
+            <img src="thinkpad_750c_transparent.png" alt="IBM ThinkPad 750">
+            <p>Os notebooks começaram a ganhar popularidade nos anos 1990...</p>
+            <p>Leia mais sobre a evolução dos notebooks <a href="https://pt.wikipedia.org/wiki/Computador_port%C3%A1til">aqui</a>.</p>
+        </article>
+    </main>
+
+    <!-- Formulário de contato -->
+    <section id="contato">
+        <h2>Contato</h2>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" maxlength="500" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2024 Seu Nome. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        // Script para contar visitas usando localStorage
+        if (localStorage.getItem('contadorVisitas')) {
+            let visitas = parseInt(localStorage.getItem('contadorVisitas'));
+            visitas++;
+            localStorage.setItem('contadorVisitas', visitas);
+            document.getElementById('contador').textContent = 'Visitas: ' + visitas;
+        } else {
+            localStorage.setItem('contadorVisitas', 1);
+            document.getElementById('contador').textContent = 'Visitas: 1';
+        }
+
+        // Script para exibir a hora local com a data
+        function atualizarHoraLocal() {
+            const agora = new Date();
+            const dia = String(agora.getDate()).padStart(2, '0');
+            const mes = String(agora.getMonth() + 1).padStart(2, '0'); // Mês começa do zero
+            const ano = agora.getFullYear();
+            const horas = String(agora.getHours()).padStart(2, '0');
+            const minutos = String(agora.getMinutes()).padStart(2, '0');
+            const segundos = String(agora.getSeconds()).padStart(2, '0');
+
+            const dataHoraFormatada = `${dia}/${mes}/${ano} ${horas}:${minutos}:${segundos}`;
+            document.getElementById('horaLocal').textContent = dataHoraFormatada;
+        }
+
+        // Atualiza a hora local a cada segundo
+        setInterval(atualizarHoraLocal, 1000);
+        atualizarHoraLocal(); // Inicializa ao carregar a página
+    </script>
+</body>
+</html>
